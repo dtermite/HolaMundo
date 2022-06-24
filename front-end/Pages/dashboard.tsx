@@ -27,8 +27,21 @@ const Dashboard: FunctionComponent = (props: any) => {
           </NavLink>
         </Sidebar>
         <div className={theme.mainarea}>
+          <div>
+            <Button
+              variant="outlined"
+              color="inherit"
+              onClickCapture={(e) => {
+                href = 'https://google.com'
+              }}
+              startIcon={<GoogleIcon />}
+            >
+              Ir a Google
+            </Button>
+          </div>
+
           <div className={classes.bigHello}>
-            <Button color="secondary" startIcon={<GoogleIcon />}></Button>
+            <Button variant="contained" color="primary" startIcon={<GoogleIcon />}></Button>
 
             <Typography variant="h1">Hola Mundo</Typography>
 

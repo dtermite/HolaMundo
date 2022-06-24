@@ -1,4 +1,4 @@
 // Database connection string
 module.exports = {
-  url: 'mongodb://127.0.0.1:27017/holamundo',
+  url: 'mongodb://127.0.0.1:27017/',
 }

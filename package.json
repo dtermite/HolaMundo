@@ -1,9 +1,6 @@
 {
   "name": "holamundo",
   "version": "1.0.0",
-  "engines":{
-    "node":"16.15.0"
-  },
   "description": "",
   "author": "Aptugo",
   "license": "ISC",

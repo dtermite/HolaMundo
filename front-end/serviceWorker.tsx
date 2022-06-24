@@ -13,9 +13,9 @@ type Config = {
 
 export function register(config?: Config) {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-    const publicUrl = new URL('https://holamundo_diegotermitegmailcom.aptugo.app')
+    const publicUrl = new URL('https://holamundo_.aptugo.com')
     window.addEventListener('load', () => {
-      const swUrl = `https://holamundo_diegotermitegmailcom.aptugo.app/service-worker.js`
+      const swUrl = `https://holamundo_.aptugo.com/service-worker.js`
       if (isLocalhost) {
         checkValidServiceWorker(swUrl, config)
         navigator.serviceWorker.ready.then(() => {
