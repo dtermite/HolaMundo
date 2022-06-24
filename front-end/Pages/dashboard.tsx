@@ -1,3 +1,4 @@
+import AddIcon from '@mui/icons-material/Add'
 import GoogleIcon from '@mui/icons-material/Google'
 import Button from '@mui/material/Button'
 import Grid from '@mui/material/Grid'
@@ -28,20 +29,13 @@ const Dashboard: FunctionComponent = (props: any) => {
         </Sidebar>
         <div className={theme.mainarea}>
           <div>
-            <Button
-              variant="outlined"
-              color="inherit"
-              onClickCapture={(e) => {
-                href = 'https://google.com'
-              }}
-              startIcon={<GoogleIcon />}
-            >
-              Ir a Google
+            <Button variant="text" color="primary" startIcon={<AddIcon />}>
+              Button1
             </Button>
           </div>
 
           <div className={classes.bigHello}>
-            <Button variant="contained" color="primary" startIcon={<GoogleIcon />}></Button>
+            <Button variant="contained" color="success" startIcon={<GoogleIcon />}></Button>
 
             <Typography variant="h1">Hola Mundo</Typography>
 
@@ -50,9 +44,6 @@ const Dashboard: FunctionComponent = (props: any) => {
             <span>(you can edit me at the Page Manager)</span>
           </div>
 
-          <Grid item>
-            <Typography variant=""></Typography>
-          </Grid>
         </div>
       </div>
     </React.Fragment>
