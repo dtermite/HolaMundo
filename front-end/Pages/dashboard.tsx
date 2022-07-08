@@ -28,14 +28,18 @@ const Dashboard: FunctionComponent = (props: any) => {
           </NavLink>
         </Sidebar>
         <div className={theme.mainarea}>
-          <div>
-            <Button variant="text" color="primary" startIcon={<AddIcon />}>
-              Button1
-            </Button>
-          </div>
+          <Grid container>
+            <Grid item xs={12} md={6}>
+              <Button variant="contained" color="primary" startIcon={<GoogleIcon />}>
+                Ir a Google
+              </Button>
+
+              <Button variant="contained" color="secondary" className={classes.button} startIcon={<AddIcon />}></Button>
+            </Grid>
+          </Grid>
 
           <div className={classes.bigHello}>
-            <Button variant="contained" color="success" startIcon={<GoogleIcon />}></Button>
+            <Button variant="contained" color="primary" startIcon={<GoogleIcon />}></Button>
 
             <Typography variant="h1">Hola Mundo</Typography>
 
@@ -44,6 +48,9 @@ const Dashboard: FunctionComponent = (props: any) => {
             <span>(you can edit me at the Page Manager)</span>
           </div>
 
+          <Grid item>
+            <Typography variant=""></Typography>
+          </Grid>
         </div>
       </div>
     </React.Fragment>
